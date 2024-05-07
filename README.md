@@ -2,7 +2,14 @@
 
 Bu saldırıyı [anlatım sayfası](https://github.com/yasir723/giris-dogrulamanin-atlatilmasi-ve-kisitlamalarin-asilmasi)nda gördüğümüz gibi hackerler olarak incele kısmında bazı HTML elementlerin özelliklerini `Örneğin: disabled veya required ` kaldırarak veya doğrudan `Ağ` kısmından boş veri göndererek veritabanı boş veya gereksiz bilgileriyle doldurabiliriz. Bu sayfada hackerler olarak değil geliştirici olarak bu saldırıya karşı sistemimizi nasıl korabileceğimizi öğreneceğiz:
 
+
+Bu tür bir saldırıyı, anlatım sayfasında gördüğümüz gibi, hackerler olarak inceleme aracını kullanarak bazı HTML öğelerinin özelliklerini, örneğin disabled veya required, kaldırarak veya doğrudan Ağ sekmesinden boş veri göndererek gerçekleştirebiliriz. Böylece, veritabanını gereksiz veya boş bilgilerle doldurabiliriz. Ancak, bu sayfada, hackerler olarak değil, sistemin geliştiricileri olarak, bu tür saldırılara karşı sistemimizi nasıl koruyabileceğimizi öğreneceğiz.
+
+
 Örnek olarak kullandığımız web sitede JavaScript kodunu kullanarak şifrenin en az bir harfin içerdiğini ve en az 6 uzunlukta olması gerektiğini kıstlama yapılmış, biz de disabled özelliğini kaldırarak bu kıstlamayı atlatabildik, bu tür kısıtlamaları hackerin atlatmaması için istemci tarafında değil sunucu tarafında yazılması gerek. PHP kodunda yazarak hackerin ona erişemeyeceği için atlatması çok zor olacaktır. Ayrıca boş gönderme işlemi sadece istemci tarafında required özelliğini kullanarak kısıtlama yapmak yanlış olur gördüğümüz gibi onu aşabildik. Güvenliği sağlamak için girilen bilgileri sunucu tarafında boş olup olmadığını da kontrol etmemiz gerek.
+
+
+Kullandığımız örnek web sitesinde, JavaScript koduyla şifrenin en az bir harf içermesi ve en az 6 karakter uzunluğunda olması gerektiği gibi kısıtlamalar yapılmıştı. Ancak, biz disabled özelliğini kaldırarak bu kısıtlamayı atlatabildik. Bu tür kısıtlamaların, bir siber saldırganın bunları atlatamaması için istemci tarafında değil, sunucu tarafında uygulanması gerekmektedir. PHP koduyla yazılan kısıtlamalar, saldırganın erişimine kapalı olduğu için atlatılması çok daha zor olacaktır. Ayrıca, sadece istemci tarafında required özelliğini kullanarak boş gönderimleri engellemek yanlış olabilir, çünkü bunu aşabildiğimizi gördük. Güvenliği sağlamak için, girilen bilgilerin boş olup olmadığını kontrol etmek için sunucu tarafında da doğrulama yapmamız gerekmektedir.
 
 Yeni Kullanıcı ekleme işlemi yapan PHP kodu:
 ```php
