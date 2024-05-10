@@ -1,6 +1,6 @@
 # Giriş Doğrulamanın Atlatılması ve Kısıtlamaların Aşılması ( Solution of Bypass Restriction and validation of input ) Çözümü
 
-Bu saldırıyı [anlatım sayfası](https://github.com/yasir723/giris-dogrulamanin-atlatilmasi-ve-kisitlamalarin-asilmasi)nda gördüğümüz gibi hackerler olarak incele kısmında bazı HTML elementlerin özelliklerini `Örneğin: disabled veya required` kaldırarak veya doğrudan `Ağ` kısmından boş veri göndererek veritabanı boş veya gereksiz bilgileriyle doldurabiliriz. Bu sayfada hackerler olarak değil geliştirici olarak bu saldırıya karşı sistemimizi nasıl korabileceğimizi öğreneceğiz:
+Bu saldırıyı [anlatım sayfası](https://github.com/yasir723/bypass-restriction-and-validation-of-input)nda gördüğümüz gibi hackerler olarak incele kısmında bazı HTML elementlerin özelliklerini `Örneğin: disabled veya required` kaldırarak veya doğrudan `Ağ` kısmından boş veri göndererek veritabanı boş veya gereksiz bilgileriyle doldurabiliriz. Bu sayfada hackerler olarak değil geliştirici olarak bu saldırıya karşı sistemimizi nasıl korabileceğimizi öğreneceğiz:
 
 
 Bu tür bir saldırıyı, anlatım sayfasında gördüğümüz gibi, hackerler olarak inceleme aracını kullanarak bazı HTML öğelerinin özelliklerini, örneğin disabled veya required, kaldırarak veya doğrudan Ağ sekmesinden boş veri göndererek gerçekleştirebiliriz. Böylece, veritabanını gereksiz veya boş bilgilerle doldurabiliriz. Ancak, bu sayfada, hackerler olarak değil, sistemin geliştiricileri olarak, bu tür saldırılara karşı sistemimizi nasıl koruyabileceğimizi öğreneceğiz.
